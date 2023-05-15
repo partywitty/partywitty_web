@@ -1,0 +1,193 @@
+.footer--section {
+    padding: 15px 0 0;
+    background: $color3;
+    .main--box {
+        max-width: $width;
+        margin: 0 5%;
+        padding-bottom: 35px;
+        .grid--box {
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+            .footer--box-a {
+                .ul--footer {
+                    margin: 15px 0;
+                    h5 {
+                        @include color--font;
+                        text-align: $left;
+                    }
+                    .li--footer--social {
+                        margin-top: 12px;
+                        a {
+                            @include color--font;
+                            font-size: 22px;
+                            margin-right: 15px;
+                            &:hover {
+                                color: $color2;
+                                transform: scale3d(1.5, 1.5, 1.5);
+                                transition: .3s;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer--box-b {
+                .ul--footer {
+                    h5 {
+                        @include color--font;
+                        font-weight: 500;
+                        font-size: 22px;
+                        line-height: 28px;
+                        text-align: $left;
+                        letter-spacing: 0.04em;
+                        margin-bottom: 15px;
+                    }
+                    .li--footer {
+                        li {
+                            color: $white;
+                            margin-bottom: 8px;
+                        }
+                        .footer--link {
+                            @include color--font;
+                            // display: $block;
+                            text-align: $left;
+                            margin-left: 10px;
+                            font-size: 16px;
+                            font-weight: 400;
+                            &::before {
+                                content: '';
+                                background-image: url('../img/arrow.png');
+                                background-repeat: $no-repeat;
+                                position: $absolute;
+                                width: 15px;
+                                height: 15px;
+                                margin: 5px -18px;
+                            }
+                            &:hover {
+                                margin-left: 0;
+                                transition: .3s;
+                                &::before {
+                                    content: unset;
+                                }
+                                &::after {
+                                    content: '';
+                                    background-image: url('../img/arrow.png');
+                                    background-repeat: $no-repeat;
+                                    position: $absolute;
+                                    width: 15px;
+                                    height: 15px;
+                                    margin: 5px 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .footer--box-c,
+            .footer--box-d,
+            .footer--box-e {
+                .ul--footer {
+                    h5 {
+                        @include color--font;
+                        font-weight: 500;
+                        font-size: 22px;
+                        line-height: 28px;
+                        text-align: $left;
+                        letter-spacing: 0.04em;
+                        margin-bottom: 15px;
+                    }
+                    .li--footer {
+                        li {
+                            color: $white;
+                            margin-bottom: 8px;
+                            &:nth-child(1) {
+                                .footer--link {
+                                    &::before {
+                                        content: '';
+                                        background-image: url('../img/home.png');
+                                    }
+                                }
+                            }
+                            &:nth-child(2) {
+                                .footer--link {
+                                    &::before {
+                                        content: '';
+                                        background-image: url('../img/mail.png');
+                                    }
+                                }
+                            }
+                            &:nth-child(3) {
+                                .footer--link {
+                                    &::before {
+                                        content: '';
+                                        background-image: url('../img/phone.png');
+                                    }
+                                }
+                            }
+                        }
+                        .footer--link {
+                            @include color--font;
+                            // display: $block;
+                            text-align: $left;
+                            margin-left: 10px;
+                            font-size: 15px;
+                            font-weight: 400;
+                            &::before {
+                                content: '';
+                                background-repeat: $no-repeat;
+                                position: $absolute;
+                                width: 15px;
+                                height: 15px;
+                                margin: 5px -18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .wrapper--box {
+        display: $flex;
+        justify-content: $spacebetween;
+        margin: 0;
+        // border-top: 1px solid #8e8e8e33;
+        padding: 15px 25px;
+        background: $black;
+        .left--box {
+            .copy--box {
+                p {
+                    color: $white;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 27.32px;
+                }
+            }
+        }
+        .right--box {
+            .url--wrapper {
+                .f--url {
+                    color: $white;
+                    margin-right: 32px;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 27.32px;
+                    &:last-child {
+                        &:after {
+                            content: unset;
+                        }
+                    }
+                    &::after {
+                        content: '';
+                        width: 1px;
+                        height: 25px;
+                        background: $color5;
+                        position: $absolute;
+                        margin: 0 15px;
+                    }
+                    &:hover {
+                        color: $color3;
+                    }
+                }
+            }
+        }
+    }
+}

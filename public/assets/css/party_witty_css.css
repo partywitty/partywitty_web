@@ -1,0 +1,459 @@
+@font-face {
+    font-family: blanka;
+    src: url('../fonts/Blanka-Regular.ttf');
+}
+
+.artist_hire--section .main--box .box--c.channel .clickable--box .music--url .url--style {
+    width: 100%;
+    border: 1px solid transparent;
+}
+
+.artist_hire--section .main--box .box--c.channel .clickable--box .music--url .url--style:hover {
+    background: #fff;
+}
+
+.artist_hire--section .main--box .box--c.channel .clickable--box {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.btn---box {
+    text-align: center;
+}
+
+.not--found {
+    margin: 0 auto;
+    color: #fff;
+}
+
+.artist_hire--section .main--box .box--c.channel .channel--box .grid--box .box--ch:first-child .play_icon {
+    display: unset;
+}
+
+.artist_hire--section .main--box .box--c.channel .channel--box .grid--box .box--ch:first-child .cl_icon {
+    display: unset;
+}
+
+.artist_hire--section .main--box .box--c.channel h3 {
+    width: 60%;
+    margin: 35px auto;
+}
+
+.artist_hire--section .main--box h3 {
+    margin-top: 35px;
+}
+
+.btn--style {
+    border-radius: 26px;
+    color: #fff;
+    font-family: "Poppins";
+    text-align: center;
+    padding: 8px 25px;
+    font-size: 15px;
+    border: transparent;
+    background-color: #FD2F71;
+}
+
+.btn--style:hover {
+    color: #FD2F71;
+    background-color: #fff;
+}
+
+.form-group.budget .form-control {
+    background: transparent;
+    border: 1px solid #fff;
+    height: 45px;
+    color: #fff;
+}
+
+select option {
+    color: #D71362;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+select option:hover {
+    color: #fff;
+    background-color: #D71362;
+}
+
+option:checked {
+    color: #fff;
+    background-color: #D71362;
+}
+
+.budget .row.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+
+.form-group.budget .form-control {
+    background: transparent;
+    box-shadow: 0px 1px 9px rgb(0 0 0 / 25%);
+    border-radius: 3px;
+    height: 40px;
+    color: #fff;
+    font-family: "Poppins";
+    font-size: 16px;
+    border: 1px solid rgb(255 255 255 / 50%);
+}
+
+.form-group.budget label {
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.6px;
+    font-weight: 400;
+}
+
+.title--budget {
+    color: #fff;
+    font-size: 26px;
+}
+
+.header--box {
+    width: 100%;
+    background: #6f6f6f33;
+    padding: 12px 0;
+}
+
+.header--box .wrapper--box {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header--box .logo--img img {
+    width: 125px;
+}
+
+.header--box ul li {
+    list-style: none;
+}
+
+.header--box ul li a {
+    color: #fff;
+    font-family: "Roboto";
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: unset;
+}
+
+.header--box ul {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header--box ul svg {
+    width: 22px;
+    height: 22px;
+    margin-right: 7px;
+}
+
+.flex--style {
+    display: flex;
+}
+
+.header--box ul li .btn--th {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    color: #D71362;
+    font-family: "Roboto";
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: unset;
+    padding: 7px 12px;
+    border: 2px solid transparent;
+}
+
+#fileInput {
+    display: block;
+}
+
+.artist_hire--section .main--box {
+    margin: 5% 10%;
+}
+
+.header--box ul li .emergency.btn--th {
+    background: #D71362;
+    color: #fff;
+}
+
+.header--box.sticky {
+    position: sticky;
+    top: 0;
+    background: #ffffff06;
+    z-index: 1;
+}
+
+.header--box ul li .emergency.btn--th:hover {
+    background: #d71362de;
+    color: #fff;
+}
+
+.header--box ul li .btn--th:hover {
+    background: #ffffffd4;
+    color: #D71362;
+}
+
+.artist_hire--section .main--box .box--c.intro .grid--box .form-control:focus,
+.artist_hire--section .main--box .box--c.intro .grid--box .form-control:focus-visible {
+    border-bottom: 2px solid #FD2F71 !important;
+}
+
+.dropzonbox {
+    width: 100%;
+    height: 125px;
+    background: #f0f0f038;
+    border: 2px dotted #f0f0f08c;
+}
+
+.dropzonbox input[type=file] {
+    display: block;
+    width: 100%;
+    height: 125px;
+    opacity: 0;
+}
+
+.dropzonetext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -80px 0;
+    font-size: 20px;
+    color: #fff;
+}
+
+.dropzonbox #status {
+    font-size: 15px;
+}
+
+.artist_hire--section .main--box .box--c.intro .grid--box.add_video {
+    grid-auto-flow: unset;
+}
+
+.artist_hire--section .main--box .box--a .box--b .check--box.radio--check input[type=radio] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 1.58824px solid #FD2F71;
+    border-radius: 3px;
+    margin: 0;
+    display: flex;
+    place-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.artist_hire--section .main--box .box--a .box--b .check--box.radio--check input[type=radio]::before {
+    content: "";
+    width: 18px;
+    height: 20px;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    transform-origin: bottom left;
+    -webkit-clip-path: polygon(10% 43%, 0 43%, 50% 100%, 100% 16%, 95% 0%, 48% 72%);
+    clip-path: polygon(10% 43%, 0 43%, 50% 100%, 100% 16%, 95% 0%, 48% 72%);
+    margin: 3px 0;
+}
+
+.artist_hire--section .main--box .box--a .box--b .check--box.radio--check input[type=radio]:focus-visible,
+.artist_hire--section .main--box .box--a .box--b .check--box.radio--check input[type=radio]:focus {
+    outline: unset;
+}
+
+.artist_hire--section .main--box .box--a .box--b .check--box.radio--check input[type=radio]:checked::before {
+    transform: scale(1);
+    background: #FD2F71;
+}
+
+.form--group {
+    margin-bottom: 15px;
+}
+
+.form--group.mb-0 {
+    margin-bottom: -15px;
+}
+
+.club--page,
+.artist--page,
+.artist--list,
+.club--list {
+    background-position: center;
+    display: unset;
+}
+
+.artist_hire--section .main--box .box--a .wrapper--box .form-control:focus,
+.artist_hire--section .main--box .box--a .wrapper--box .form-control:focus-visible {
+    box-shadow: none;
+    outline: none;
+    border-radius: 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #FD2F71 !important;
+}
+
+.artist_hire--section .main--box .box--c.intro .grid--box .form-control::placeholder {
+    color: #fff;
+}
+
+.artist_hire--section .main--box .box--c .search--box .form-control {
+    color: #fff !important;
+}
+
+.artist_hire--section .main--box .box--c .search--box .form-control::placeholder {
+    color: #fff !important;
+}
+
+.artist_hire--section .main--box .box--c.channel .channel--box h5 {
+    text-align: left !important;
+}
+
+.grid--box .fa.fa-edit {
+    float: right;
+    margin: 50px -25px;
+    position: absolute;
+    top: auto;
+    color: #555555;
+}
+
+.artist_hire--section .main--box .box--c .wallet--box .style--box .wrapper--box p {
+    text-align: left !important;
+}
+
+.date-input {
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    margin: -35px 15px;
+    float: right;
+    text-align: right;
+    width: 25px;
+    height: 25px;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default:last-child {
+    border: 2px solid transparent;
+    background: transparent;
+    font-weight: normal;
+    color: transparent;
+    border-radius: 0;
+    padding: 0;
+    outline: 1px solid transparent;
+}
+
+.slider-box .price--box input:focus,
+ :focus-visible {
+    outline: none !important;
+    border: none !important;
+}
+
+label.error {
+    font-size: 12px;
+    color: red;
+    position: absolute;
+    margin: -7px 0;
+    font-weight: bold;
+    display: block;
+    padding: 0;
+}
+
+.login--section .main--box .wrapper--box .flex--50 {
+    padding: 7%;
+    overflow-y: unset !important;
+    /* height: unset !important; */
+    display: flex;
+    align-items: center;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
+}
+
+.mobile--logo {
+    display: none;
+}
+
+.login--button--bx .lg--btn--theame.add--on {
+    padding: 7px 15px;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 991px) {
+    .artist_hire--section .main--box .box--c.channel h3 {
+        width: 100%;
+    }
+    .mobile--logo {
+        display: block;
+    }
+    .mobile--logo img {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        margin-bottom: 25px;
+    }
+    /* .login--section .main--box .wrapper--box .flex--50 {
+        background-image: url(../img/rg_img.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0 7%;
+        display: flex;
+        align-items: center;
+        overflow-y: unset;
+    } */
+    .register--page {
+        background-image: url(../img/rg_img.png) !important;
+        background-repeat: no-repeat;
+        padding: 0 7%;
+        display: flex;
+        align-items: center;
+        overflow-y: unset;
+        background: transparent;
+        height: 100vh;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .login--button--bx .lg--btn--theame.add--on {
+        padding: 7px 12px;
+        font-size: 12px;
+    }
+    .artist_hire--section .main--box .box--a {
+        margin-top: 35px;
+    }
+    .header--box .logo--img img {
+        width: 85px;
+    }
+    .header--box ul li .btn--th {
+        font-size: 14px;
+        padding: 3px 7px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .header--box .logo--img img {
+        width: 60px;
+    }
+    .header--box ul li .btn--th {
+        font-size: 12px;
+        padding: 1px 3px;
+    }
+    .header--box ul svg {
+        width: 16px;
+        height: 15px;
+        margin-right: 5px;
+    }
+}

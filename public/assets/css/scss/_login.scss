@@ -1,0 +1,381 @@
+.login--page,
+.register--page {
+    background: $black;
+    align-items: $center;
+    height: 100vh;
+    display: $flex;
+    justify-content: $spacebetween;
+}
+
+.register--page {
+    .login--section {
+        .main--box {
+            .wrapper--box {
+                .flex--50 {
+                    &:first-child {
+                        background-image: url('../img/rg_img.png');
+                    }
+                }
+            }
+        }
+    }
+}
+
+.form--group {
+    margin-bottom: 20px;
+    .wrapper--box {
+        // gap: 15px;
+        .box--i {
+            margin: 0 0 0 20px;
+            img {
+                width: 65px;
+                height: 65px;
+                border-radius: 7px;
+            }
+            input {
+                // width: 65px;
+                // height: 65px;
+                position: $absolute;
+                margin: 0 -65px;
+                visibility: $hidden;
+                &::after {
+                    width: 65px;
+                    height: 65px;
+                    top: 0;
+                    left: 0;
+                    position: $relative;
+                    background-color: $transparent;
+                    content: '';
+                    display: $inline-block;
+                    visibility: $visible;
+                    border: 2px solid $transparent;
+                    border-radius: 7px;
+                }
+                &:checked:after {
+                    width: 65px;
+                    height: 65px;
+                    top: 0;
+                    left: 0;
+                    position: $relative;
+                    background-color: $transparent;
+                    content: '';
+                    display: $inline-block;
+                    visibility: $visible;
+                    border: 2px solid $color3;
+                }
+            }
+        }
+    }
+    label {
+        font-family: $poppins;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: $white;
+        padding: 0 20px;
+    }
+    .form-control {
+        padding: 0 20px;
+        background: #f0f0f033;
+        box-shadow: 0px 1px 9px #00000040;
+        backdrop-filter: blur(5.5px);
+        border-radius: 26px;
+        height: 45px;
+        border: 1px solid transparent;
+        color: $white;
+        &.num {
+            padding: 0 0 0 100px;
+        }
+        &:focus,
+         :focus-visible {
+            border: 1px solid $color3;
+            outline: $none !important;
+            box-shadow: $none !important;
+        }
+    }
+    // .fa.fa-eye {
+    //     margin: -30px 15px;
+    // }
+    .num--style {
+        position: $relative;
+        top: -35px;
+        left: $auto;
+        right: $auto;
+        bottom: $auto;
+        margin: 0 20px;
+        color: $white;
+        padding-right: 8px;
+        border-right: 1px solid;
+    }
+}
+
+.login--section {
+    position: $relative;
+    width: $width;
+    .main--box {
+        max-width: $width;
+        margin: 0;
+        // padding: 50px 0;
+        .wrapper--box {
+            align-items: $center;
+            .flex--50 {
+                .url--style {
+                    font-family: $poppins;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #C6C6C6;
+                    a {
+                        color: $color2;
+                        &:hover {
+                            color: $color3;
+                            text-decoration: $underline;
+                        }
+                    }
+                }
+                padding: 7%;
+                overflow-y: $scroll;
+                height: 100vh;
+                display: $flex;
+                align-items: $center;
+                .wrapper--box {
+                    flex-wrap: $wrap;
+                }
+                &:first-child {
+                    background-image: url('../img/login-img.png');
+                    background-size: $cover;
+                    background-repeat: $no-repeat;
+                    height: 100vh;
+                    padding: 0 7%;
+                    display: $flex;
+                    align-items: $center;
+                    overflow-y: $unset;
+                    text-align: $center;
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 36px;
+                    letter-spacing: 0.04em;
+                    margin-top: 15px;
+                    @include color--font;
+                }
+                h3 {
+                    font-weight: 500;
+                    font-size: 40px;
+                    line-height: 60px;
+                    @include color--font;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+.inputBox {
+    position: $relative;
+    width: 100%;
+    margin-top: 35px;
+    i {
+        position: $absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        border-bottom: 1px solid $color1;
+        border-radius: 0;
+        transition: 0.5s;
+        pointer-events: $none;
+        z-index: 9;
+    }
+    input {
+        position: $relative;
+        width: 100%;
+        padding: 10px 2px 10px;
+        background: $transparent;
+        border: $none;
+        outline: $none;
+        color: $white;
+        font-size: 1em;
+        letter-spacing: 0.05em;
+        z-index: 10;
+    }
+    label {
+        position: $absolute;
+        left: 0;
+        padding: 10px 2px 10px;
+        font-size: 1em;
+        color: #8f8f8f;
+        pointer-events: $none;
+        letter-spacing: 0.05em;
+        transition: 0.5s;
+    }
+}
+
+// .inputBox .inputBox 
+.inputBox input:valid~label,
+.inputBox input:focus~label {
+    color: $color2;
+    transform: translateX(0px) translateY(-34px);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+// .inputBox
+.inputBox input:valid~i,
+.inputBox input:focus~i {
+    height: 45px;
+}
+
+.form--group {
+    .fa {
+        position: $relative;
+        color: $white;
+        // margin: -30px 0;
+        float: $right;
+        cursor: $pointer;
+        margin: -30px 15px;
+        z-index: 11;
+    }
+}
+
+.inputBox {
+    .fa {
+        position: $absolute;
+        color: $white;
+        // margin: -30px 0;
+        float: $right;
+        cursor: $pointer;
+        margin: 15px -25px;
+        z-index: 11;
+    }
+}
+
+.inline--checkbox {
+    display: $flex;
+    justify-content: $spacebetween;
+    margin: 12px 0;
+    color: $white;
+    font-size: 12px;
+    font-family: $poppins;
+    label {
+        position: $relative;
+        cursor: $pointer;
+        font-weight: 500;
+        &::before {
+            content: '';
+            background: $transparent;
+            border: 2px solid $color3;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+            padding: 7px;
+            display: $inline_block;
+            position: $relative;
+            vertical-align: $middle;
+            cursor: $pointer;
+            margin-right: 5px;
+        }
+    }
+    input {
+        padding: 0;
+        height: $initial;
+        width: $initial;
+        margin-bottom: 0;
+        display: $none;
+        cursor: $pointer;
+        &:checked+label:after {
+            content: '';
+            display: $block;
+            position: $absolute;
+            top: 2px;
+            left: 7px;
+            width: 5px;
+            height: 11px;
+            border: solid $white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+        &:checked+label::before {
+            content: '';
+            background: $gradient1;
+            border: 2px solid $transparent;
+        }
+    }
+    .forget--url {
+        color: $white;
+        &:hover {
+            color: $color3;
+            text-decoration-line: $underline;
+        }
+    }
+}
+
+.login--button--bx {
+    display: $flex;
+    justify-content: $center;
+    margin: 20px $auto;
+    .lg--btn--theame {
+        background: $gradient1;
+        backdrop-filter: blur(7.5px);
+        border-radius: 26px;
+        @include color--font;
+        padding: 8px 60px;
+        font-size: 22px;
+        border: $transparent;
+        background-color: $color3;
+        background-image: $color2;
+        background-image: $gradient1;
+        background-size: 300px;
+        transition: background 300ms ease-in-out;
+        &:focus {
+            box-shadow: $none !important;
+            outline: $none !important;
+        }
+        &:focus-visible {
+            box-shadow: $none !important;
+            outline: $none !important;
+        }
+        &:hover {
+            background-position: -200%;
+            transition: background 300ms ease-in-out;
+        }
+    }
+}
+
+.bf--af--box {
+    display: $flex;
+    margin: 20px $auto;
+    justify-content: $center;
+    align-items: $center;
+    gap: 20px;
+    span {
+        color: $white;
+        font-size: 15px;
+        font-family: $poppins;
+        font-weight: 500;
+        &.bf--line,
+        &.af--line {
+            background: #f5f5f580;
+            height: 1px;
+            width: 20%;
+        }
+    }
+}
+
+.social--box {
+    display: $flex;
+    justify-content: $center;
+    gap: 25px;
+    margin: 35px 0;
+    .s--img {
+        img {
+            width: 45px;
+            height: 45px;
+        }
+        &:hover {
+            img {
+                transition: 1s;
+                transform: rotate(360deg) scale(1.2);
+            }
+        }
+    }
+}

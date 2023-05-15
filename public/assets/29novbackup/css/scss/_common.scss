@@ -1,0 +1,253 @@
+@import '_variables.scss';
+@import '_fonts.scss';
+@import '_color.scss';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: $none;
+    &:hover {
+        text-decoration: $none;
+    }
+    &:focus {
+        text-decoration: $none;
+    }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: $poppins;
+    overflow-x: hidden;
+}
+
+.d-none {
+    display: $none;
+}
+
+.wrapper--box {
+    display: $flex;
+}
+
+.grid--box {
+    display: $grid;
+}
+
+.main--box {
+    max-width: $width;
+    margin: 0 5%;
+}
+
+.flex--10 {
+    flex: 0 0 calc($width - 90%);
+}
+
+.flex--20 {
+    flex: 0 0 calc($width - 80%);
+}
+
+.flex--30 {
+    flex: 0 0 calc($width - 70%);
+}
+
+.flex--40 {
+    flex: 0 0 calc($width - 60%);
+}
+
+.flex--50 {
+    flex: 0 0 calc($width - 50%);
+}
+
+.flex--60 {
+    flex: 0 0 calc($width - 40%);
+}
+
+.flex--70 {
+    flex: 0 0 calc($width - 30%);
+}
+
+.flex--80 {
+    flex: 0 0 calc($width - 20%);
+}
+
+.flex--90 {
+    flex: 0 0 calc($width - 10%);
+}
+
+.flex--100 {
+    flex: 0 0 $width;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mt-2 {
+    margin-top: 10px;
+}
+
+.mt-1 {
+    margin-top: 5px;
+}
+
+.mt-3 {
+    margin-top: 15px;
+}
+
+.mt-4 {
+    margin-top: 20px;
+}
+
+.mt-5 {
+    margin-top: 25px;
+}
+
+.mt-8 {
+    margin-top: 40px;
+}
+
+@mixin color--font() {
+    color: $white;
+    font-family: $poppins;
+    text-align: $center;
+}
+
+@mixin common--style() {
+    position: $relative;
+    margin: 0;
+}
+
+.mb-3 {
+    margin-bottom: 15px;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+::placeholder {
+    color: #414141ed;
+    opacity: 1;
+}
+
+// .radio--buttons
+.inline--radio--buttons {
+    .radio--buttons {
+        margin-left: 10px;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.back--btn {
+    position: $fixed;
+    top: 2%;
+    right: $auto;
+    left: 2%;
+    z-index: 1;
+    img {
+        width: 65px;
+        height: 45px;
+    }
+}
+
+.sort--btn {
+    position: $fixed;
+    top: 4%;
+    right: 2%;
+    left: $auto;
+    z-index: 1;
+    .btn--img {
+        background: rgba(111, 111, 111, 0.2);
+        backdrop-filter: blur(13px);
+        border-radius: 10px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        padding: 12px 18px;
+        margin-right: 12px;
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+.show-password-toggle.icon-eye-close::before {
+    content: "\f070";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background: red;
+}
+
+.show-password-toggle.icon-eye-open::before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background: $color1;
+}
+
+// .icon-eye-close{
+//     <i class="fa fa-eye-slash" aria-hidden="true"></i>
+// }
+@mixin btn--s() {
+    box-shadow: 0px 1.34px 12.06px #00000040;
+    border-radius: 6.7px;
+    border: 1px solid $transparent;
+    @include color--font;
+    color: #383838;
+    font-weight: 500;
+    padding: 7px 16px;
+    font-size: 12px;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: $color2;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: $color4;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: $color1;
+}

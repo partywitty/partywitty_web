@@ -1,0 +1,800 @@
+@media only screen and (max-width: 1200px) {
+    .artist_hire--section {
+        .main--box {
+            .box--c {
+                &.channel {
+                    .channel--box {
+                        .grid--box {
+                            grid-template-columns: repeat(6, 1fr);
+                        }
+                    }
+                }
+            }
+            h3 {
+                font-size: 35px;
+            }
+        }
+    }
+    .login--section {
+        .main--box {
+            .wrapper--box {
+                .flex--50 {
+                    h3 {
+                        margin-bottom: 0;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .artist_hire--section {
+        .main--box {
+            .box--c {
+                &.intro {
+                    width: $width;
+                }
+                .search--box {
+                    width: $width;
+                }
+                .selected--box {
+                    width: $width;
+                }
+                .days--box {
+                    width: $width;
+                    .grid--box {
+                        gap: 5px;
+                    }
+                }
+                .artist--type--box {
+                    width: $width;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .slider-box {
+        .price--box {
+            input {
+                font-size: 15px;
+            }
+        }
+    }
+    .artist_hire--section {
+        .main--box {
+            &.intro {
+                margin: 10% 10%;
+            }
+            .box--c {
+                &.channel {
+                    .channel--box {
+                        h5 {
+                            text-align: $left;
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .wallet--box {
+                    width: 85%;
+                }
+                .average--box {
+                    .avg--box {
+                        width: 75%;
+                    }
+                }
+                &.cities {
+                    width: 100%;
+                }
+                &.channel {
+                    .clickable--box {
+                        &.insta {
+                            width: 75%;
+                            margin: 10px auto;
+                        }
+                    }
+                    .channel--box {
+                        .grid--box {
+                            grid-template-columns: repeat(5, 1fr);
+                        }
+                    }
+                }
+            }
+            .box--a {
+                .grid--box {
+                    .club--lable {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .back--btn img {
+        width: 55px;
+        height: 40px;
+    }
+    .sort--btn {
+        // top: 7%;
+        .btn--img {
+            padding: 10px 14px;
+            img {
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+    .artist_hire--section {
+        .main--box {
+            padding: 30px 30px;
+            &.art--list {
+                margin: 10% 5%;
+            }
+            .box--c {
+                width: $width;
+                &.intro {
+                    width: $width;
+                }
+                .grid--box {
+                    gap: 25px;
+                    .box--artist {
+                        padding: 20px;
+                        .wrapper--box {
+                            .content {
+                                .ul--box {
+                                    gap: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .login--section {
+        .main--box {
+            .wrapper--box {
+                flex-wrap: $wrap;
+                .flex--50 {
+                    flex: 0 0 $width;
+                    overflow-y: $unset;
+                    height: $auto;
+                    &:first-child {
+                        // height: $auto;
+                        // padding: 35px 7%;
+                        display: $none;
+                    }
+                }
+            }
+        }
+    }
+    .register--page {
+        height: $unset;
+    }
+    .artist_hire--section {
+        .main--box {
+            h3 {
+                font-size: 35px;
+            }
+            .box--a {
+                width: $width - 35%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .artist_hire--section {
+        .main--box {
+            .box--c {
+                &.channel {
+                    .channel--box {
+                        .grid--box {
+                            grid-template-columns: repeat(4, 1fr);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .artist_hire--section {
+        .main--box {
+            .box--c {
+                &.intro {
+                    .grid--box {
+                        label {
+                            font-size: 16px;
+                        }
+                        .club--lable {
+                            font-size: 25px;
+                        }
+                    }
+                }
+                &.channel {
+                    .clickable--box {
+                        &.insta {
+                            width: $width;
+                        }
+                    }
+                    .channel--box {
+                        .grid--box {
+                            .box--ch {
+                                img {
+                                    width: 100px;
+                                    height: 100px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .search--box {
+                    width: $width;
+                }
+                .selected--box {
+                    width: $width;
+                    margin: 25px 0;
+                }
+                .artist--type--box {
+                    width: $width;
+                    margin: 25px 0;
+                }
+                .grid--box {
+                    .box--artist {
+                        .btn--box {
+                            .btn--style {
+                                padding: 7px 12px;
+                            }
+                        }
+                        .wrapper--box {
+                            .img--box {
+                                img {
+                                    width: 70px;
+                                    height: 70px;
+                                }
+                            }
+                            .content {
+                                h5 {
+                                    font-size: 16px;
+                                    text-align: $left;
+                                }
+                                .art--skill {
+                                    .skill--name {
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .box--a {
+                .grid--box {
+                    .club--lable {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .artist_hire--section {
+        .main--box {
+            h3 {
+                font-size: 22px;
+                line-height: 32px;
+            }
+            .box--c {
+                .days--box {
+                    .grid--box {
+                        grid-template-columns: repeat(6, 1fr);
+                        .day {
+                            font-size: 22px;
+                            padding: 5px 4px;
+                        }
+                    }
+                }
+                &.channel {
+                    .channel--box {
+                        .grid--box {
+                            .box--ch {
+                                .play_icon {
+                                    margin: 30px -60px;
+                                }
+                                img {
+                                    width: 90px;
+                                    height: 90px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.intro {
+                    width: $width;
+                    .grid--box {
+                        grid-auto-flow: unset;
+                        grid-template-columns: unset;
+                    }
+                }
+                .grid--box {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+        }
+    }
+    .artist_hire--section {
+        .main--box {
+            .box--a {
+                width: 80%;
+            }
+        }
+    }
+    .login--section {
+        .main--box {
+            .wrapper--box {
+                .flex--50 {
+                    h3 {
+                        font-size: 25px;
+                        line-height: 40px;
+                    }
+                    .url--style {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .social--box {
+        margin: 25px 0;
+    }
+    .login--button--bx {
+        .lg--btn--theame {
+            padding: 8px 45px;
+            font-size: 18px;
+        }
+    }
+    .bf--af--box {
+        span {
+            font-size: 12px;
+        }
+    }
+    .form--group {
+        .wrapper--box {
+            .box--i {
+                img {
+                    width: 45px;
+                    height: 45px;
+                }
+                input {
+                    margin: 0 -44px;
+                    &:after {
+                        width: 45px;
+                        height: 45px;
+                    }
+                    &:checked::after {
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default {
+        border: 1px solid #FD2F71;
+        outline: 1px solid #FD2F71;
+    }
+    .ui-slider .ui-slider-handle {
+        width: 1em;
+        height: 1em;
+    }
+    .ui-slider-horizontal .ui-slider-handle {
+        top: -0.1em;
+    }
+    .slider-box .price--box input {
+        font-size: 13px;
+    }
+    .artist_hire--section {
+        .main--box {
+            h3 {
+                margin-top: 0;
+            }
+            .box--c {
+                .days--box {
+                    .grid--box {
+                        grid-template-columns: repeat(5, 1fr);
+                    }
+                }
+                .check--box {
+                    label {
+                        margin: 0 0 0 5px;
+                        font-size: 12px;
+                    }
+                    input[type=checkbox] {
+                        width: 15px;
+                        height: 15px;
+                        &::before {
+                            width: 8px;
+                            height: 10px;
+                        }
+                    }
+                }
+                .wallet--box {
+                    width: $width;
+                    .style--box {
+                        padding: 15px 0;
+                        .wrapper--box {
+                            flex-wrap: $wrap;
+                            gap: 15px;
+                            h5 {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+                .average--box {
+                    .avg--box {
+                        width: $width - 10%;
+                    }
+                }
+                &.channel {
+                    .clickable--box {
+                        h5 {
+                            font-size: 25px;
+                        }
+                    }
+                    .channel--box {
+                        .grid--box {
+                            grid-template-columns: repeat(3, 1fr);
+                        }
+                    }
+                }
+            }
+            .box--b {
+                .check--box {
+                    label {
+                        font-size: 15px;
+                    }
+                }
+            }
+            .box--a {
+                .p--style {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .back--btn {
+        img {
+            width: 55px;
+            height: 40px;
+        }
+    }
+    .artist_hire--section {
+        .main--box {
+            margin: 0 7%;
+            .box--a {
+                h3 {
+                    font-size: 25px;
+                }
+                width: $width;
+                .box--b {
+                    .inline--check {
+                        input[type=checkbox] {
+                            width: 25px;
+                            height: 25px;
+                        }
+                        label {
+                            font-size: 16px;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    // .inline--radio {
+    //     label {
+    //         input[type=radio] {
+    //             width: 18px;
+    //             height: 18px;
+    //             &::before {
+    //                 width: 12px;
+    //                 height: 12px;
+    //                 margin: 1px;
+    //             }
+    //         }
+    //     }
+    // }
+    .artist_hire--section {
+        .main--box {
+            .box--c {
+                .days--box {
+                    .grid--box {
+                        grid-template-columns: repeat(4, 1fr);
+                    }
+                }
+                &.intro {
+                    .grid--box {
+                        .club--lable {
+                            font-size: 18px;
+                        }
+                        label {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .grid--box {
+                    .box--artist {
+                        .wrapper--box {
+                            flex-wrap: $wrap;
+                            .img--box {
+                                img {
+                                    width: 50px;
+                                    height: 50px;
+                                }
+                            }
+                        }
+                        .btn--box {
+                            text-align: $left;
+                            margin: 15px 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .artist_hire--section {
+        .main--box {
+            padding: 20px;
+            h3 {
+                font-size: 15px;
+            }
+            .box--a {
+                .box--b {
+                    .check--box {
+                        label {
+                            font-size: 14px;
+                        }
+                        input[type=checkbox] {
+                            width: 20px;
+                            height: 20px;
+                            &::before {
+                                width: 12px;
+                                height: 12px;
+                            }
+                        }
+                    }
+                    .inline--check {
+                        label {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .para--style {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .artist_hire--section {
+        .main--box {
+            .box--c {
+                .days--box {
+                    .grid--box {
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+                }
+                .selected--box {
+                    margin: 15px 0;
+                }
+                .search--box {
+                    h5 {
+                        font-size: 14px;
+                    }
+                    .form-control {
+                        height: 35px;
+                    }
+                    .times--icon {
+                        width: 20px;
+                        height: 20px;
+                        margin: -28px 0;
+                        &::before,
+                        &:after {
+                            height: 20px;
+                            width: 2px;
+                        }
+                    }
+                }
+                &.channel {
+                    .clickable--box {
+                        .music--url {
+                            .url--style {
+                                padding: 7px 12px;
+                                font-size: 12px;
+                                img {
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                            }
+                        }
+                    }
+                    .channel--box {
+                        .grid--box {
+                            grid-template-columns: repeat(3, 1fr);
+                            .box--ch {
+                                img {
+                                    width: 80px;
+                                    height: 80px;
+                                }
+                                .play_icon {
+                                    margin: 32px -50px;
+                                    img {
+                                        width: 25px;
+                                        height: 25px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .box--a {
+                .grid--box {
+                    .club--lable {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .artist_hire--section {
+        .main--box {
+            .box--c {
+                &.intro {
+                    .grid--box {
+                        .club--lable {
+                            font-size: 15px;
+                        }
+                    }
+                }
+                &.channel {
+                    .channel--box {
+                        .grid--box {
+                            grid-template-columns: repeat(2, 1fr);
+                            .box--ch {
+                                img {
+                                    width: 80px;
+                                    height: 80px;
+                                }
+                                .play_icon {
+                                    margin: 32px -50px;
+                                    img {
+                                        width: 25px;
+                                        height: 25px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .selected--box {
+                    .select--type {
+                        padding: 5px 16px;
+                        font-size: 12px;
+                        .times--icon {
+                            margin: 0 0;
+                        }
+                    }
+                }
+                .artist--type--box {
+                    .artist--type {
+                        padding: 5px 16px;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .box--a {
+                .flex--80 {
+                    flex: 0 0 100%;
+                }
+                h3 {
+                    font-size: 18px;
+                }
+                .p--style {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .back--btn {
+        img {
+            width: 40px;
+            height: 30px;
+        }
+    }
+    .artist_hire--section {
+        .main--box {
+            h3 {
+                font-size: 18px;
+                line-height: 25px;
+                margin-bottom: 20px;
+            }
+            .box--c {
+                &.cities {
+                    .cities--box {
+                        h5 {
+                            font-size: 15px;
+                        }
+                        .price--box {
+                            font-size: 12px;
+                            padding: 4px 8px;
+                        }
+                    }
+                }
+            }
+            .box--a {
+                .box--b {
+                    .inline--check {
+                        padding: 8px 12px;
+                        label {
+                            font-size: 12px;
+                        }
+                        input[type=checkbox] {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .slider-box .price--box input {
+        font-size: 10px;
+    }
+    .artist_hire--section {
+        .main--box {
+            .box--c {
+                &.channel {
+                    .clickable--box {
+                        h5 {
+                            font-size: 20px;
+                        }
+                        .music--url {
+                            .url--style {
+                                padding: 5px 8px;
+                                font-size: 10px;
+                                gap: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

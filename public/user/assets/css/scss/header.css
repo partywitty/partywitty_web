@@ -1,0 +1,10 @@
+:root {
+  --relative: relative;
+  --absolute: absolute;
+  --width: 100%;
+}
+
+.header--section {
+  position: var(--relative);
+  width: var(--width);
+}/*# sourceMappingURL=header.css.map */

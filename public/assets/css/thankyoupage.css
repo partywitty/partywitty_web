@@ -1,0 +1,104 @@
+
+/* @font-face {
+    font-family: 'Blanka';
+    src: url('./fonts/Blanka-Regular.otf');
+} */
+@import url('https://fonts.cdnfonts.com/css/blanka');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@300&display=swap');
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background-image: url(../img/rg_img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: bottom; */
+    overflow-y: hidden;
+}
+.thankyou-wrapper{
+  /* width:100%; */
+  /* height:auto; */
+  margin:auto;
+  background: hwb(0deg 100% 0% / 11%);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgb(187 187 187 / 32%);
+}h1{
+  font-family: 'Kaushan Script', cursive;
+font-size:4em;
+letter-spacing:3px;
+color:#fff ;
+margin:0;
+margin-bottom:20px;
+}
+.thankyou-wrapper img{
+  text-align:center;
+  width: 25%;
+  display: flex;
+  margin: 0 auto;
+}
+.thankyou-wrapper p{
+  font-size: 22px;
+  text-align:center;
+  color:#fffc;
+  padding:5px 10px 10px;
+  font-family: 'Roboto';
+                                                
+}
+ .lg--btn--theame {
+    background: linear-gradient(95.75deg, #FE262F 10.71%, #FD2F71 93.51%);
+    -webkit-backdrop-filter: blur(7.5px);
+    backdrop-filter: blur(7.5px);
+    border-radius: 26px;
+    color: #fff;
+    font-family: "Poppins";
+    text-align: center;
+    padding: 8px 60px;
+    font-size: 22px;
+    border: transparent;text-decoration: none;
+}
+ .lg--btn--theame:hover {
+    background: linear-gradient(95.75deg, #FD2F71 10.71%, #FE262F 93.51%);
+    transition: 3s;
+}
+.login-main-container {
+    text-align: center;
+}
+/* .thankyou-wrapper a{
+  font:26px Arial, Helvetica, sans-serif;
+  text-align:center;
+  color:#ffffff;
+  display:block;
+  text-decoration:none;
+  width:250px;
+  background:#E47425;
+  margin:10px auto 0px;
+  padding:15px 20px 15px;
+  border-bottom:5px solid #F96700;
+}
+.thankyou-wrapper a:hover{
+  font:26px Arial, Helvetica, sans-serif;
+  text-align:center;
+  color:#ffffff;
+  display:block;
+  text-decoration:none;
+  width:250px;
+  background:#F96700;
+  margin:10px auto 0px;
+  padding:15px 20px 15px;
+  border-bottom:5px solid #F96700;
+} */
+
+@media only screen and (max-width: 991px) {
+    .thankyou-wrapper p {
+        font-size: 16px;
+    }
+    .thankyou-wrapper img {
+        width: 35%;        
+    }
+    .lg--btn--theame {       
+        padding: 8px 25px;
+        font-size: 15px;       
+    }
+}

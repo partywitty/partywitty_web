@@ -1,0 +1,86 @@
+@import '_common.scss';
+.header--section {
+    position: $relative;
+    width: $width;
+    margin: 0;
+    background: $white;
+    transition: .2s;
+    &.sticky {
+        position: $sticky;
+        top: 0;
+        left: 0;
+        width: $width;
+        transition: .2s;
+        // height: 60px;
+        background: $white;
+        z-index: 400;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+        .main--box--header {
+            .wrapper--header {
+                padding-top: 8px;
+                padding-bottom: 8px;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .main--box--header {
+        max-width: $width;
+        margin: 0 5%;
+        .wrapper--header {
+            display: $flex;
+            justify-content: $spacebetween;
+            align-items: $center;
+            padding-top: 12px;
+            padding-bottom: 8px;
+            // margin-bottom: 55px;
+            .right--box {
+                .desktop--box {
+                    .ul--box {
+                        display: $flex;
+                        gap: 15px;
+                        .li--box {
+                            .url--style {
+                                background: $color4;
+                                color: $white;
+                                padding: 8px 28px;
+                                display: $inlineflex;
+                                align-items: $center;
+                                justify-content: $center;
+                                border: 2px solid $color4;
+                                border-radius: 3px;
+                                position: $relative;
+                                cursor: pointer;
+                                font-weight: 700;
+                                font-size: 16px;
+                                font-family: $poppins;
+                                transition: .5s;
+                                &:hover {
+                                    color: $color4;
+                                    background: $none;
+                                    border-radius: 0;
+                                    transition: .5s;
+                                }
+                            }
+                            &:last-child {
+                                .url--style {
+                                    background: $none;
+                                    color: $color3;
+                                    border-radius: 0;
+                                    transition: .5s;
+                                    border: $none;
+                                    padding: 8px 0;
+                                    &:hover {
+                                        color: $black;
+                                        background: $none;
+                                        border-radius: 6px;
+                                        transition: .5s;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
